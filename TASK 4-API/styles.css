@@ -1,0 +1,89 @@
+/* Set the font and background image for the body */
+body {
+
+
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Set a fallback background color */
+    color: white; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the body cover the entire viewport height */
+    margin: 0; /* Remove default margin */
+    position: relative; /* Position relative for overlay */
+}
+
+
+/* Pseudo-element for the background image */
+body::before {
+    content: '';
+    background-image: url('pexels-asad-photo-maldives-1456291.jpg'); /* Replace 'your-image-url.jpg' with your image URL */
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat; /* Adjust as needed */
+    background-attachment: fixed; /* Adjust as needed */
+    opacity: 0.5; /* Set the opacity (0.5 for 50% opacity) */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Place it below the content */
+}
+
+/* Style for the main container of the login form */
+.container {
+    background-color: rgba(231, 218, 218, 0.8); /* Semi-transparent black background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 40px; /* Inner spacing */
+    text-align: center; /* Center-align the content */
+}
+
+/* Style for the main heading */
+h1 {
+    color: #09080a; /* Purple color for the heading */
+}
+
+/* Style for text input fields and buttons */
+input[type="text"],
+input[type="password"],
+button {
+    display: block; /* Display elements as blocks */
+    width: 90%; /* Full width */
+    margin: 10px 0; /* Vertical margin */
+    padding: 10px; /* Padding for input fields and buttons */
+    border: none; /* Remove borders */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+
+/* Style for text input fields */
+input[type="text"],
+input[type="password"] {
+    background: rgba(240, 239, 239, 0.3); /* Semi-transparent white background */
+    color: rgb(13, 7, 7); /* White text color */
+}
+
+/* Style for the login button */
+button {
+    background-color: #295ee5; /* Purple background color for the button */
+    color: white; /* White text color */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+}
+
+/* Style for error messages */
+.error-message {
+    color: #ff0000; /* Red color for error messages */
+    font-size: 14px;
+    display: none; /* Initially hidden */
+}
+
+/* Style for the secured page container */
+#securedPage {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    display: none; /* Initially hidden */
+    padding: 20px; /* Inner spacing */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 20px; /* Top margin */
+}
+
+/* Style for the character animation */
